@@ -1,0 +1,71 @@
+[
+    {
+        "key": "ctrl+shift+m",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == 'r'",
+        "args": {
+            "snippet": " %>% "
+        }
+    },
+    {
+        "key": "alt+-",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == 'r'",
+        "args": {
+            "snippet": " <- "
+        }
+    },
+    {
+        "key": "ctrl+shift+r",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == 'r'",
+        "args": {
+            "snippet": "# --------------------------------------------------"
+        }
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "macros.pythonExecSelectionAndCursorDown",
+        "when": "editorTextFocus && editorLangId == 'python'"
+    },
+    {
+        "key": "ctrl+shift+alt+d",
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "-editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+d",
+        "command": "editor.action.removeCommentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+k ctrl+u",
+        "command": "-editor.action.removeCommentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+v",
+        "command": "workbench.view.debug",
+        "when": "viewContainer.workbench.view.debug.enabled"
+    },
+    {
+        "key": "ctrl+shift+d",
+        "command": "-workbench.view.debug",
+        "when": "viewContainer.workbench.view.debug.enabled"
+    }
+]
